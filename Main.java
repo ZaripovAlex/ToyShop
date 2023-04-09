@@ -9,13 +9,10 @@ public class Main {
         for (Toys t:toys) {
             shop.add(t);
         }
-//        toys.forEach (shop::add);
 
         Map<Integer, Integer> resultMap = new HashMap<>();
         for (Toys t:toys) {
             resultMap.put(t.getId(),0);
-        }
-//        toys.forEach(toy -> resultMap.put(toy.getId(), 0));
 
         for (int i = 0; i < 10; i++) {
             int toyId = shop.getRandomToyId();
